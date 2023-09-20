@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Mooli', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 60px;
+    align-items: center;
+    background-color:antiquewhite;
+    /* margin-left: -16px; */
+    box-shadow: 5px 5px 10px rgb(221, 219, 219);
+}
+
+.searchbar{
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 20px;
+    font-family: 'Mooli', sans-serif;
+    
+}
+.searchicon{
+    padding: 20px;
+    background-color: rgb(252, 217, 171);
+    border-radius: 100px;
+}
+
+
+
+.cartbutton{
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-family: 'Mooli', sans-serif;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(252, 217, 171);
+}
+
+.carticon{
+    padding-right: 5px;
+}
