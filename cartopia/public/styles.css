@@ -9,6 +9,10 @@ body{
     font-family: 'Mooli', sans-serif;
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .navbar{
     display: flex;
@@ -19,6 +23,8 @@ body{
     background-color:antiquewhite;
     /* margin-left: -16px; */
     box-shadow: 5px 5px 10px rgb(221, 219, 219);
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .searchbar{
@@ -49,7 +55,103 @@ body{
     font-size: 20px;
     background-color: rgb(252, 217, 171);
 }
-
+.cartbutton:hover{
+    background: rgb(255, 172, 63);
+}
 .carticon{
     padding-right: 5px;
 }
+
+
+
+/* ---------------------------- */
+
+.welcomeshowcase{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.showcase-img-1{
+    height: 500px;
+}
+
+
+/* --------------------------- */
+#menu-heading{
+
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+    
+}
+
+#menu-box{
+    margin-top: 3rem;
+}
+
+
+.menu-card{
+    /* border: 4px solid red; */
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+#acard{
+    padding-top: 10px;
+    height: 350px;
+    width: 300px;
+    box-shadow: 5px 5px 10px rgb(165, 164, 164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+#card-img{
+    height: 250px;
+    width: 250px;
+}
+
+#about-card{
+    padding: .5rem 1.5rem 1.5rem;
+}
+
+/* ----------------- */
+
+#footer{
+    border-top: 4px solid rgb(252, 217, 171);
+    background:antiquewhite;
+    padding: 50px;
+}
+
+
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer1,.footer2, .footer3,.footer4{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 h3,.footer2 h3, .footer3 h3,.footer4 h3{
+    padding-bottom: 10px;
+}
+
+.footer1 a,.footer2 a, .footer3 a,.footer4 a{
+    padding-bottom: 10px;
+}
+
+#logo{
+    text-align: center;
+    color: rgb(255, 145, 0);
+}
+
