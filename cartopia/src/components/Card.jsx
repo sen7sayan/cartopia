@@ -1,13 +1,13 @@
 import React from "react";
 
-function Card(){
+function Card(props){
     return(
         <div id="acard">
             <a>
-                <img id="card-img" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="img-1"/>
+                <img id="card-img" src={props.img} alt="imgs"/>
                 <div id="about-card">
-                    <h2 id="card-title">Card title</h2>
-                    <h3 id="card-">123</h3>
+                    <h5 id="card-title">{props.tit}</h5>
+                    <h3 id="card-">&#36;{props.pri}</h3>
                 </div>
             </a>
             

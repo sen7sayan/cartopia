@@ -89,6 +89,10 @@ body{
     
 }
 
+#menu-heading-category{
+    text-transform: capitalize;
+}
+
 #menu-box{
     margin-top: 3rem;
 }
@@ -114,7 +118,9 @@ body{
     align-items: center;
     border-radius: 10px;
 }
+
 #card-img{
+    margin-left: 25px;
     height: 250px;
     width: 250px;
 }

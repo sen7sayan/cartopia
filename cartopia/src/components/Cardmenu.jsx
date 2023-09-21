@@ -1,20 +1,36 @@
-import React from "react";
+import React ,{useEffect, useState}from "react";
 import Card from "./Card";
 
-function Cardmenu(){
+
+
+
+function Cardmenu(props){
+
+    const URL =  "https://fakestoreapi.com/products";
+    const [filteredData, setdata] = useState([]);
+
+    function filterCategory(askFilter){   
+        return fetch(URL)
+            .then((response)=>response.json())
+            .then((datas)=> setdata(datas.filter((dat)=>{return dat.category === askFilter})))
+    }
+
+
+    useEffect(()=>{
+        filterCategory(props.category);
+    },[]);
+    
+
     return(
         <div id="menu-box">
             <div id="menu-heading" className="container">
-                <h2>Top 10 items </h2>
+                <h2 id="menu-heading-category">{props.category}</h2>
                 <button className="cartbutton">Explore</button>
             </div>
             <div className="menu-card container">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                
+                {filteredData.map((fd)=>{return <Card key={fd.id} img={fd.image} pri={fd.price} tit={fd.title}/>})}
+                
             </div>
         </div>
         
