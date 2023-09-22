@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer(){
     return(<footer id="footer">
         <div className="footer-links">
             <div className="footer1">
                 <h3>Reach US</h3>
-                <a>About us</a>
+                <a><Link to={"/about"}>  About us  </Link></a>
                 <a>Careers</a>
                 <a>Customer Care</a>
                 <a>Gifts</a>

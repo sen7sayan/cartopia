@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Card(props){
     return(
+        <Link to={"/product"}>
         <div id="acard">
             <a>
                 <img id="card-img" src={props.img} alt="imgs"/>
@@ -12,6 +14,7 @@ function Card(props){
             </a>
             
         </div>
+        </Link>
     );
 }
 

@@ -1,6 +1,6 @@
 import React ,{useEffect, useState}from "react";
 import Card from "./Card";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -25,12 +25,10 @@ function Cardmenu(props){
         <div id="menu-box">
             <div id="menu-heading" className="container">
                 <h2 id="menu-heading-category">{props.category}</h2>
-                <button className="cartbutton">Explore</button>
+                <Link to={"/category"}><button className="cartbutton">Explore</button> </Link>
             </div>
             <div className="menu-card container">
-                
                 {filteredData.map((fd)=>{return <Card key={fd.id} img={fd.image} pri={fd.price} tit={fd.title}/>})}
-                
             </div>
         </div>
         

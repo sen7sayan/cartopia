@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "./Heading";
+import { Link } from "react-router-dom";
 
 function Welcome(){
     return(<div className="container welcomeshowcase">
@@ -7,7 +7,7 @@ function Welcome(){
             <div className="heading-offers">
                 <h1>Get Flat 30% OFF*</h1>
                 <h1>Latest Fashion</h1>
-                <button className="cartbutton">Shop Now</button>
+                <Link to={"/shop"}><button className="cartbutton">Shop Now</button></Link>
             </div>
         </div>
     );
