@@ -1,0 +1,9 @@
+.product-desc{
+    width: 50%;
+}
+
+@media(max-width: 600px) {
+    #product-page{
+        flex-direction: column;
+    }
+}

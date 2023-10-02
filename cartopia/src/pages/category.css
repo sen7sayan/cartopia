@@ -1,0 +1,11 @@
+.category-items div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+
+.category-items h2{
+    margin: 5%;
+    text-transform: capitalize;
+}

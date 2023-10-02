@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Card(props){
+function Card({id,img,tit,pri}){
     return(
-        <Link to={"/product"}>
+        <Link to="/product" state={{id}}>
         <div id="acard">
             <a>
-                <img id="card-img" src={props.img} alt="imgs"/>
+                <img id="card-img" src={img} alt="imgs"/>
                 <div id="about-card">
-                    <h5 id="card-title">{props.tit}</h5>
-                    <h3 id="card-">&#36;{props.pri}</h3>
+                    <h5 id="card-title">{tit}</h5>
+                    <h3 id="card-">&#36;{pri}</h3>
                 </div>
             </a>
-            
+
         </div>
         </Link>
     );

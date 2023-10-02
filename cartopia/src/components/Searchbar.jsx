@@ -12,13 +12,11 @@ function Searchbar(){
         changetype(userTyped);
     }
 
-    function handleClick(){
-        localStorage.setItem('searchBox',`${productType}`)
-    }
+
     return(
-        <div>
+        <div id="searchbar-main">
             <input onChange={handleChange} className="searchbar" placeholder="Search.."/>
-            <Link to={"/search"}><a  onClick={handleClick} class="searchicon fa-solid fa-magnifying-glass fa-lg" /></Link>
+            <Link to= "/search" state={{productType}}><a  class="searchicon fa-solid fa-magnifying-glass fa-lg" /></Link>
         </div>
         
     );

@@ -1,0 +1,32 @@
+.categories{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+}
+
+.categories a{
+    padding: 1% 5%;
+    text-align: left;
+    text-decoration-line: none;
+    border-radius: 10px;
+}
+.categories a:hover{
+    color: brown;
+    background-color: antiquewhite;
+}
+
+#search-product{
+    display: flex;
+}
+
+.category-list{
+    padding: 5%;
+    background-color: bisque;
+}
+
+#product-lists{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}

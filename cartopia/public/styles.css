@@ -17,18 +17,36 @@ body{
 .navbar{
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
     height: 60px;
+    width: 100%;
     align-items: center;
     background-color:antiquewhite;
-    /* margin-left: -16px; */
     box-shadow: 5px 5px 10px rgb(221, 219, 219);
     flex-wrap: wrap;
-    gap: 20px;
 }
 
+
+
+#search-box{
+    text-align: center;
+    position: fixed;
+    width: 25%;
+    height: 70%;
+    background-color:antiquewhite;
+    margin-left: 2%;
+    margin-top: .5rem;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+    padding-top: 2rem;
+}
+
+.searchbar-main{
+
+    width: 800px;
+}
 .searchbar{
-    width: 400px;
+    width: 74%;
     height: 40px;
     border: none;
     border-radius: 15px;
@@ -47,7 +65,7 @@ body{
 
 .cartbutton{
     width: 100px;
-    height: 40px;
+    height: 50px;
     border: none;
     font-family: 'Mooli', sans-serif;
     border-radius: 10px;
@@ -174,3 +192,30 @@ a{
 #bad-url img{
     height: 400px;
 }
+
+#product-img{
+    max-width: 250px;
+    max-height: 350px;
+}
+
+#product-page{
+    margin: 5rem;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    gap: 5rem;
+}
+
+
+
+
+
+
+
+#category-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: -1.5rem;
+    /* margin: 0 auto; */
+}
+
