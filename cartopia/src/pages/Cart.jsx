@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useSelector } from "react-redux";
 import './cart.css'
 import { AddItems ,RemoveItems,RemoveAll} from '../states/reducers/Storeitems';
@@ -9,6 +9,7 @@ const Cart = () => {
   const currentItems = useSelector((state) => state.itemDetails);
   const totalMoney = useSelector((state) => state.totalAmount);
   const dispatch = useDispatch();
+  console.log(currentItems)
   return (
     <div>
     <div className='product-features'>
@@ -20,7 +21,7 @@ const Cart = () => {
       <span>Remove</span>
     </div>
       {currentItems.map((cur)=>{return <div className='added-items'>
-      <span>{cur.id}</span>
+      <span className='product-cart'><strong>{cur.title}</strong><img src={cur.img} alt='product-img'></img></span>
       <span>{cur.price}</span>
       <span><button onClick={()=>{dispatch(RemoveTotal({amount:cur.price})); dispatch(DecProduct({id:cur.id})); dispatch(RemoveItems()); }}>-</button>{cur.quantity}<button onClick={()=>{dispatch(AddProduct({id:cur.id, quantity:1})); dispatch(AddItems({quantity:1})); dispatch(AddTotal({amount:cur.price})); }}>+</button></span>
       <span>{`${cur.makeWrap}`}</span>

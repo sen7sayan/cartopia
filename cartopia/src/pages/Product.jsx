@@ -30,7 +30,7 @@ const Product = () => {
     <div id="product-page" className='container'>
       <Productimg src={image}/>
       <Productdescription  title={title} category={category} desc={description} />
-      <Productprice price={price} id={id}/>
+      <Productprice price={price} id={id} img={image} title={title}/>
     </div>
   )
 }

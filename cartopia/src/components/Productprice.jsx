@@ -1,9 +1,9 @@
 import React,{useReducer, useState} from 'react'
 import '../pages/productprice.css'
 import { useDispatch } from "react-redux";
-import { AddItems ,RemoveItems} from '../states/reducers/Storeitems';
+import { AddItems} from '../states/reducers/Storeitems';
 import { AddProduct,RemoveProduct } from '../states/reducers/productDetails';
-import { AddTotal,RemoveTotal } from '../states/reducers/total';
+import { AddTotal} from '../states/reducers/total';
 const reducer = (state,action) =>{
   switch(action.type){
     case "Add":
@@ -52,6 +52,8 @@ function Productprice(props) {
           price:props.price,
           quantity:state,
           makeWrap: isWrap,
+          img:props.img,
+          title:props.title
         }));
         dispatch(AddTotal({amount:(state*props.price)}));
         }}>Add to Cart</button>
